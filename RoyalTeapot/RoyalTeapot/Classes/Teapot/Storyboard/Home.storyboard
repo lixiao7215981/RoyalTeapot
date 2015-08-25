@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yys-jh-XwM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation Controller-->
+        <scene sceneID="2kR-Np-vhc">
+            <objects>
+                <navigationController id="yys-jh-XwM" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eAC-2X-Myq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KOI-uF-zoo" kind="relationship" relationship="rootViewController" id="6dz-3X-1N8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiz-VA-MGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793" y="294"/>
+        </scene>
+        <!--Teapot Home View Controller-->
+        <scene sceneID="NFP-LZ-XKA">
+            <objects>
+                <viewController id="KOI-uF-zoo" customClass="RTTeapotHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1rI-t8-T2H"/>
+                        <viewControllerLayoutGuide type="bottom" id="yAR-2T-3ya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Spd-CZ-mbn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="TSD-at-dB1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fff-Lu-pLQ">
+                                <rect key="frame" x="159" y="498" width="282" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="E9G-7W-HEL"/>
+                                    <constraint firstAttribute="height" constant="47" id="kBQ-kj-qQc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="add_device_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="add_device_select"/>
+                                <state key="highlighted" backgroundImage="add_device_select"/>
+                                <connections>
+                                    <action selector="teapotCenterBtnClick:" destination="KOI-uF-zoo" eventType="touchUpInside" id="wsg-rm-nnz"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLJ-OY-nfz" userLabel="managerBtnView" customClass="RTTeapotHomeCenterBtnView">
+                                <rect key="frame" x="0.0" y="408" width="600" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="kfS-Y6-Q0e"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_center" translatesAutoresizingMaskIntoConstraints="NO" id="lQp-rL-TYy">
+                                <rect key="frame" x="140" y="91" width="320" height="292"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3o4-pb-pl8" customClass="RTHomeCollectionView">
+                                <rect key="frame" x="20" y="85" width="560" height="303"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kO6-KF-LvN">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KOI-uF-zoo" id="uKU-Ee-sRy"/>
+                                    <outlet property="delegate" destination="KOI-uF-zoo" id="Bnx-hs-KQ1"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YqL-p2-Ryl">
+                                <rect key="frame" x="286" y="358" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3o4-pb-pl8" secondAttribute="trailing" constant="20" id="2C6-bu-ek5"/>
+                            <constraint firstItem="3o4-pb-pl8" firstAttribute="leading" secondItem="Spd-CZ-mbn" secondAttribute="leading" constant="20" id="5DZ-d7-ORg"/>
+                            <constraint firstAttribute="trailing" secondItem="LLJ-OY-nfz" secondAttribute="trailing" id="6SD-Yg-nf1"/>
+                            <constraint firstItem="fff-Lu-pLQ" firstAttribute="top" secondItem="LLJ-OY-nfz" secondAttribute="bottom" constant="20" id="AxI-ie-PCt"/>
+                            <constraint firstItem="LLJ-OY-nfz" firstAttribute="leading" secondItem="Spd-CZ-mbn" secondAttribute="leading" id="F6r-gi-yCH"/>
+                            <constraint firstAttribute="trailing" secondItem="TSD-at-dB1" secondAttribute="trailing" id="Gha-FF-RVs"/>
+                            <constraint firstItem="3o4-pb-pl8" firstAttribute="top" secondItem="Spd-CZ-mbn" secondAttribute="top" constant="85" id="J36-Qe-C73"/>
+                            <constraint firstAttribute="centerX" secondItem="fff-Lu-pLQ" secondAttribute="centerX" id="P63-Ua-RUC"/>
+                            <constraint firstItem="3o4-pb-pl8" firstAttribute="centerY" secondItem="lQp-rL-TYy" secondAttribute="centerY" id="SgL-GE-pCm"/>
+                            <constraint firstAttribute="centerX" secondItem="YqL-p2-Ryl" secondAttribute="centerX" constant="-5" id="XHf-Hb-xYc"/>
+                            <constraint firstItem="TSD-at-dB1" firstAttribute="top" secondItem="Spd-CZ-mbn" secondAttribute="top" id="Z4F-9v-p35"/>
+                            <constraint firstItem="TSD-at-dB1" firstAttribute="leading" secondItem="Spd-CZ-mbn" secondAttribute="leading" id="cHw-Sj-nUt"/>
+                            <constraint firstAttribute="bottom" secondItem="fff-Lu-pLQ" secondAttribute="bottom" constant="55" id="jEq-aX-qut"/>
+                            <constraint firstItem="3o4-pb-pl8" firstAttribute="centerX" secondItem="lQp-rL-TYy" secondAttribute="centerX" id="sZh-h1-LaB"/>
+                            <constraint firstItem="LLJ-OY-nfz" firstAttribute="top" secondItem="3o4-pb-pl8" secondAttribute="bottom" constant="20" id="wwh-x0-P8m"/>
+                            <constraint firstItem="yAR-2T-3ya" firstAttribute="top" secondItem="TSD-at-dB1" secondAttribute="bottom" id="yJs-Wt-Lsr"/>
+                            <constraint firstItem="YqL-p2-Ryl" firstAttribute="top" secondItem="lQp-rL-TYy" secondAttribute="bottom" constant="-25" id="yOG-kK-e2V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ryu-Ar-h1q"/>
+                    <connections>
+                        <outlet property="collectionView" destination="3o4-pb-pl8" id="hO6-W7-OOO"/>
+                        <outlet property="controlBtnView" destination="LLJ-OY-nfz" id="OQd-zh-X6s"/>
+                        <outlet property="pageView" destination="YqL-p2-Ryl" id="1QH-S7-FOR"/>
+                        <outlet property="teapotCenterBtn" destination="fff-Lu-pLQ" id="MHG-GL-yXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAQ-26-w3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="294"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add_device_normal" width="424" height="70"/>
+        <image name="add_device_select" width="424" height="70"/>
+        <image name="home_bg" width="320" height="569"/>
+        <image name="home_center" width="320" height="292"/>
+    </resources>
+</document>

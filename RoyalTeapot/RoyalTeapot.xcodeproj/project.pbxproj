@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EA29A6A1B55F5C90084E72D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA29A691B55F5C90084E72D /* libicucore.dylib */; };
+		4EA29A6C1B55F5D20084E72D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA29A6B1B55F5D20084E72D /* libz.dylib */; };
+		4EA29A6E1B55F5DC0084E72D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA29A6D1B55F5DC0084E72D /* MessageUI.framework */; };
+		4EA29A701B55F5E40084E72D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA29A6F1B55F5E40084E72D /* SystemConfiguration.framework */; };
+		4EB6B59E1B6B3018000D3773 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB6B59D1B6B3018000D3773 /* CoreTelephony.framework */; };
+		4EB6B5A01B6B3023000D3773 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB6B59F1B6B3023000D3773 /* OpenGLES.framework */; };
+		4EB6B5A21B6B3030000D3773 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB6B5A11B6B3030000D3773 /* SceneKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4EB6B5A41B6B303E000D3773 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB6B5A31B6B303E000D3773 /* CoreMotion.framework */; };
+		4EB6B5A61B6B3049000D3773 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB6B5A51B6B3049000D3773 /* AudioToolbox.framework */; };
+		4EB6B5A81B6B3052000D3773 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB6B5A71B6B3052000D3773 /* AVFoundation.framework */; };
+		4EC4F7B01B4E842A00ACEE5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC4F7AF1B4E842A00ACEE5F /* Images.xcassets */; };
+		4EC4F7BF1B4E842B00ACEE5F /* RoyalTeapotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4F7BE1B4E842B00ACEE5F /* RoyalTeapotTests.m */; };
+		4ECECFC91B5E31150036B721 /* libSmartLinkStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECECFC81B5E31150036B721 /* libSmartLinkStaticLib.a */; };
+		4EE4753E1B8CC44900270AA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE475111B8CC44900270AA3 /* LaunchScreen.xib */; };
+		4EE4753F1B8CC44900270AA3 /* PgySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE475141B8CC44900270AA3 /* PgySDK.framework */; };
+		4EE475401B8CC44900270AA3 /* DeviceStatusCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE475171B8CC44900270AA3 /* DeviceStatusCodeModel.m */; };
+		4EE475411B8CC44900270AA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4751A1B8CC44900270AA3 /* AppDelegate.m */; };
+		4EE475421B8CC44900270AA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4751B1B8CC44900270AA3 /* main.m */; };
+		4EE475431B8CC44900270AA3 /* RoyalTeapotConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4751E1B8CC44900270AA3 /* RoyalTeapotConst.m */; };
+		4EE475441B8CC44900270AA3 /* RTMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE475221B8CC44900270AA3 /* RTMenuViewController.m */; };
+		4EE475451B8CC44900270AA3 /* RTTeapotHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE475241B8CC44900270AA3 /* RTTeapotHomeViewController.m */; };
+		4EE475461B8CC44900270AA3 /* RTMQTTResultDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE475271B8CC44900270AA3 /* RTMQTTResultDataModel.m */; };
+		4EE475471B8CC44900270AA3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE475291B8CC44900270AA3 /* Home.storyboard */; };
+		4EE475481B8CC44900270AA3 /* FullAutomaticManualBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE4752D1B8CC44900270AA3 /* FullAutomaticManualBtn.xib */; };
+		4EE475491B8CC44900270AA3 /* RTFullAutomatic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4752F1B8CC44900270AA3 /* RTFullAutomatic.m */; };
+		4EE4754A1B8CC44900270AA3 /* RTManualHeatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE475311B8CC44900270AA3 /* RTManualHeatingView.m */; };
+		4EE4754B1B8CC44900270AA3 /* RTManuallyAddWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE475331B8CC44900270AA3 /* RTManuallyAddWaterView.m */; };
+		4EE4754C1B8CC44900270AA3 /* RTHomeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE475351B8CC44900270AA3 /* RTHomeCollectionView.m */; };
+		4EE4754D1B8CC44900270AA3 /* RTHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE475371B8CC44900270AA3 /* RTHomeCollectionViewCell.m */; };
+		4EE4754E1B8CC44900270AA3 /* RTHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE475381B8CC44900270AA3 /* RTHomeCollectionViewCell.xib */; };
+		4EE4754F1B8CC44900270AA3 /* RTTeapotHomeCenterBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4753A1B8CC44900270AA3 /* RTTeapotHomeCenterBtnView.m */; };
+		4EE475501B8CC44900270AA3 /* TestWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4753D1B8CC44900270AA3 /* TestWebViewController.m */; };
+		5D383799B8AFDB35E5EA6C00 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56660BA4E91DAF310BCA08BC /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EC4F7B91B4E842B00ACEE5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC4F7971B4E842A00ACEE5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC4F79E1B4E842A00ACEE5F;
+			remoteInfo = RoyalTeapot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FA7AB62E313FE852DEAB854 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		437F142F84CE2C591887C5CB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4EA29A691B55F5C90084E72D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		4EA29A6B1B55F5D20084E72D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4EA29A6D1B55F5DC0084E72D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4EA29A6F1B55F5E40084E72D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4EB6B59D1B6B3018000D3773 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4EB6B59F1B6B3023000D3773 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4EB6B5A11B6B3030000D3773 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		4EB6B5A31B6B303E000D3773 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4EB6B5A51B6B3049000D3773 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4EB6B5A71B6B3052000D3773 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4EC4F79F1B4E842A00ACEE5F /* RoyalTeapot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoyalTeapot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC4F7AF1B4E842A00ACEE5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4EC4F7B81B4E842B00ACEE5F /* RoyalTeapotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoyalTeapotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC4F7BD1B4E842B00ACEE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC4F7BE1B4E842B00ACEE5F /* RoyalTeapotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoyalTeapotTests.m; sourceTree = "<group>"; };
+		4EC4F7E21B4E863B00ACEE5F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ECECFC81B5E31150036B721 /* libSmartLinkStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSmartLinkStaticLib.a; path = Pods/HF_SmartLink/SmartLink/FrameWork/libSmartLinkStaticLib.a; sourceTree = "<group>"; };
+		4EE475111B8CC44900270AA3 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		4EE475141B8CC44900270AA3 /* PgySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PgySDK.framework; sourceTree = "<group>"; };
+		4EE475161B8CC44900270AA3 /* DeviceStatusCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceStatusCodeModel.h; sourceTree = "<group>"; };
+		4EE475171B8CC44900270AA3 /* DeviceStatusCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceStatusCodeModel.m; sourceTree = "<group>"; };
+		4EE475191B8CC44900270AA3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4EE4751A1B8CC44900270AA3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4EE4751B1B8CC44900270AA3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4EE4751C1B8CC44900270AA3 /* PCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCH.pch; sourceTree = "<group>"; };
+		4EE4751D1B8CC44900270AA3 /* RoyalTeapotConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoyalTeapotConst.h; sourceTree = "<group>"; };
+		4EE4751E1B8CC44900270AA3 /* RoyalTeapotConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoyalTeapotConst.m; sourceTree = "<group>"; };
+		4EE475211B8CC44900270AA3 /* RTMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMenuViewController.h; sourceTree = "<group>"; };
+		4EE475221B8CC44900270AA3 /* RTMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMenuViewController.m; sourceTree = "<group>"; };
+		4EE475231B8CC44900270AA3 /* RTTeapotHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTeapotHomeViewController.h; sourceTree = "<group>"; };
+		4EE475241B8CC44900270AA3 /* RTTeapotHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTeapotHomeViewController.m; sourceTree = "<group>"; };
+		4EE475261B8CC44900270AA3 /* RTMQTTResultDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMQTTResultDataModel.h; sourceTree = "<group>"; };
+		4EE475271B8CC44900270AA3 /* RTMQTTResultDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMQTTResultDataModel.m; sourceTree = "<group>"; };
+		4EE475291B8CC44900270AA3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4EE4752D1B8CC44900270AA3 /* FullAutomaticManualBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullAutomaticManualBtn.xib; sourceTree = "<group>"; };
+		4EE4752E1B8CC44900270AA3 /* RTFullAutomatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFullAutomatic.h; sourceTree = "<group>"; };
+		4EE4752F1B8CC44900270AA3 /* RTFullAutomatic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFullAutomatic.m; sourceTree = "<group>"; };
+		4EE475301B8CC44900270AA3 /* RTManualHeatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTManualHeatingView.h; sourceTree = "<group>"; };
+		4EE475311B8CC44900270AA3 /* RTManualHeatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTManualHeatingView.m; sourceTree = "<group>"; };
+		4EE475321B8CC44900270AA3 /* RTManuallyAddWaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTManuallyAddWaterView.h; sourceTree = "<group>"; };
+		4EE475331B8CC44900270AA3 /* RTManuallyAddWaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTManuallyAddWaterView.m; sourceTree = "<group>"; };
+		4EE475341B8CC44900270AA3 /* RTHomeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTHomeCollectionView.h; sourceTree = "<group>"; };
+		4EE475351B8CC44900270AA3 /* RTHomeCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHomeCollectionView.m; sourceTree = "<group>"; };
+		4EE475361B8CC44900270AA3 /* RTHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		4EE475371B8CC44900270AA3 /* RTHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		4EE475381B8CC44900270AA3 /* RTHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		4EE475391B8CC44900270AA3 /* RTTeapotHomeCenterBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTeapotHomeCenterBtnView.h; sourceTree = "<group>"; };
+		4EE4753A1B8CC44900270AA3 /* RTTeapotHomeCenterBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTeapotHomeCenterBtnView.m; sourceTree = "<group>"; };
+		4EE4753C1B8CC44900270AA3 /* TestWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebViewController.h; sourceTree = "<group>"; };
+		4EE4753D1B8CC44900270AA3 /* TestWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewController.m; sourceTree = "<group>"; };
+		56660BA4E91DAF310BCA08BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EC4F79C1B4E842A00ACEE5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB6B5A81B6B3052000D3773 /* AVFoundation.framework in Frameworks */,
+				4EB6B5A61B6B3049000D3773 /* AudioToolbox.framework in Frameworks */,
+				4EB6B5A41B6B303E000D3773 /* CoreMotion.framework in Frameworks */,
+				4EB6B5A21B6B3030000D3773 /* SceneKit.framework in Frameworks */,
+				4EB6B5A01B6B3023000D3773 /* OpenGLES.framework in Frameworks */,
+				4EE4753F1B8CC44900270AA3 /* PgySDK.framework in Frameworks */,
+				4EB6B59E1B6B3018000D3773 /* CoreTelephony.framework in Frameworks */,
+				4ECECFC91B5E31150036B721 /* libSmartLinkStaticLib.a in Frameworks */,
+				4EA29A701B55F5E40084E72D /* SystemConfiguration.framework in Frameworks */,
+				4EA29A6E1B55F5DC0084E72D /* MessageUI.framework in Frameworks */,
+				4EA29A6C1B55F5D20084E72D /* libz.dylib in Frameworks */,
+				4EA29A6A1B55F5C90084E72D /* libicucore.dylib in Frameworks */,
+				5D383799B8AFDB35E5EA6C00 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC4F7B51B4E842B00ACEE5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EC4F7961B4E842A00ACEE5F = {
+			isa = PBXGroup;
+			children = (
+				4EC4F7A11B4E842A00ACEE5F /* RoyalTeapot */,
+				4EC4F7BB1B4E842B00ACEE5F /* RoyalTeapotTests */,
+				4EC4F7A01B4E842A00ACEE5F /* Products */,
+				FFA2D4966852044893E7DF46 /* Pods */,
+				B941DC6C1A9B894326667BD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4EC4F7A01B4E842A00ACEE5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EC4F79F1B4E842A00ACEE5F /* RoyalTeapot.app */,
+				4EC4F7B81B4E842B00ACEE5F /* RoyalTeapotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EC4F7A11B4E842A00ACEE5F /* RoyalTeapot */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4750D1B8CC44900270AA3 /* Classes */,
+				4EC4F7E11B4E863B00ACEE5F /* Plist */,
+				4EC4F7AF1B4E842A00ACEE5F /* Images.xcassets */,
+			);
+			path = RoyalTeapot;
+			sourceTree = "<group>";
+		};
+		4EC4F7BB1B4E842B00ACEE5F /* RoyalTeapotTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC4F7BE1B4E842B00ACEE5F /* RoyalTeapotTests.m */,
+				4EC4F7BC1B4E842B00ACEE5F /* Supporting Files */,
+			);
+			path = RoyalTeapotTests;
+			sourceTree = "<group>";
+		};
+		4EC4F7BC1B4E842B00ACEE5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EC4F7BD1B4E842B00ACEE5F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EC4F7E11B4E863B00ACEE5F /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				4EC4F7E21B4E863B00ACEE5F /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		4EE4750D1B8CC44900270AA3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4750E1B8CC44900270AA3 /* Main */,
+				4EE4751F1B8CC44900270AA3 /* Teapot */,
+				4EE4753B1B8CC44900270AA3 /* Test */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4EE4750E1B8CC44900270AA3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4750F1B8CC44900270AA3 /* Controller */,
+				4EE475101B8CC44900270AA3 /* LaunchScreen */,
+				4EE475121B8CC44900270AA3 /* Lib */,
+				4EE475151B8CC44900270AA3 /* Model */,
+				4EE475181B8CC44900270AA3 /* Other */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4EE4750F1B8CC44900270AA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4EE475101B8CC44900270AA3 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475111B8CC44900270AA3 /* LaunchScreen.xib */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		4EE475121B8CC44900270AA3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475131B8CC44900270AA3 /* Pgy_SDK */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		4EE475131B8CC44900270AA3 /* Pgy_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475141B8CC44900270AA3 /* PgySDK.framework */,
+			);
+			path = Pgy_SDK;
+			sourceTree = "<group>";
+		};
+		4EE475151B8CC44900270AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475161B8CC44900270AA3 /* DeviceStatusCodeModel.h */,
+				4EE475171B8CC44900270AA3 /* DeviceStatusCodeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EE475181B8CC44900270AA3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475191B8CC44900270AA3 /* AppDelegate.h */,
+				4EE4751A1B8CC44900270AA3 /* AppDelegate.m */,
+				4EE4751B1B8CC44900270AA3 /* main.m */,
+				4EE4751C1B8CC44900270AA3 /* PCH.pch */,
+				4EE4751D1B8CC44900270AA3 /* RoyalTeapotConst.h */,
+				4EE4751E1B8CC44900270AA3 /* RoyalTeapotConst.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4EE4751F1B8CC44900270AA3 /* Teapot */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475201B8CC44900270AA3 /* Controller */,
+				4EE475251B8CC44900270AA3 /* Model */,
+				4EE475281B8CC44900270AA3 /* Storyboard */,
+				4EE4752A1B8CC44900270AA3 /* View */,
+			);
+			path = Teapot;
+			sourceTree = "<group>";
+		};
+		4EE475201B8CC44900270AA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475211B8CC44900270AA3 /* RTMenuViewController.h */,
+				4EE475221B8CC44900270AA3 /* RTMenuViewController.m */,
+				4EE475231B8CC44900270AA3 /* RTTeapotHomeViewController.h */,
+				4EE475241B8CC44900270AA3 /* RTTeapotHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4EE475251B8CC44900270AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475261B8CC44900270AA3 /* RTMQTTResultDataModel.h */,
+				4EE475271B8CC44900270AA3 /* RTMQTTResultDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EE475281B8CC44900270AA3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4EE475291B8CC44900270AA3 /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		4EE4752A1B8CC44900270AA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4752C1B8CC44900270AA3 /* ManageBtn */,
+				4EE475341B8CC44900270AA3 /* RTHomeCollectionView.h */,
+				4EE475351B8CC44900270AA3 /* RTHomeCollectionView.m */,
+				4EE475361B8CC44900270AA3 /* RTHomeCollectionViewCell.h */,
+				4EE475371B8CC44900270AA3 /* RTHomeCollectionViewCell.m */,
+				4EE475381B8CC44900270AA3 /* RTHomeCollectionViewCell.xib */,
+				4EE475391B8CC44900270AA3 /* RTTeapotHomeCenterBtnView.h */,
+				4EE4753A1B8CC44900270AA3 /* RTTeapotHomeCenterBtnView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EE4752C1B8CC44900270AA3 /* ManageBtn */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4752D1B8CC44900270AA3 /* FullAutomaticManualBtn.xib */,
+				4EE4752E1B8CC44900270AA3 /* RTFullAutomatic.h */,
+				4EE4752F1B8CC44900270AA3 /* RTFullAutomatic.m */,
+				4EE475301B8CC44900270AA3 /* RTManualHeatingView.h */,
+				4EE475311B8CC44900270AA3 /* RTManualHeatingView.m */,
+				4EE475321B8CC44900270AA3 /* RTManuallyAddWaterView.h */,
+				4EE475331B8CC44900270AA3 /* RTManuallyAddWaterView.m */,
+			);
+			path = ManageBtn;
+			sourceTree = "<group>";
+		};
+		4EE4753B1B8CC44900270AA3 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4753C1B8CC44900270AA3 /* TestWebViewController.h */,
+				4EE4753D1B8CC44900270AA3 /* TestWebViewController.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B941DC6C1A9B894326667BD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EB6B5A71B6B3052000D3773 /* AVFoundation.framework */,
+				4EB6B5A51B6B3049000D3773 /* AudioToolbox.framework */,
+				4EB6B5A31B6B303E000D3773 /* CoreMotion.framework */,
+				4EB6B5A11B6B3030000D3773 /* SceneKit.framework */,
+				4EB6B59F1B6B3023000D3773 /* OpenGLES.framework */,
+				4EB6B59D1B6B3018000D3773 /* CoreTelephony.framework */,
+				4ECECFC81B5E31150036B721 /* libSmartLinkStaticLib.a */,
+				4EA29A6F1B55F5E40084E72D /* SystemConfiguration.framework */,
+				4EA29A6D1B55F5DC0084E72D /* MessageUI.framework */,
+				4EA29A6B1B55F5D20084E72D /* libz.dylib */,
+				4EA29A691B55F5C90084E72D /* libicucore.dylib */,
+				56660BA4E91DAF310BCA08BC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA2D4966852044893E7DF46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				437F142F84CE2C591887C5CB /* Pods.debug.xcconfig */,
+				3FA7AB62E313FE852DEAB854 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EC4F79E1B4E842A00ACEE5F /* RoyalTeapot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC4F7C21B4E842B00ACEE5F /* Build configuration list for PBXNativeTarget "RoyalTeapot" */;
+			buildPhases = (
+				91AD96014DD04979FC4CD761 /* Check Pods Manifest.lock */,
+				4EC4F79B1B4E842A00ACEE5F /* Sources */,
+				4EC4F79C1B4E842A00ACEE5F /* Frameworks */,
+				4EC4F79D1B4E842A00ACEE5F /* Resources */,
+				ABE5C46ABA16F465B2A65FBB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoyalTeapot;
+			productName = RoyalTeapot;
+			productReference = 4EC4F79F1B4E842A00ACEE5F /* RoyalTeapot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EC4F7B71B4E842B00ACEE5F /* RoyalTeapotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC4F7C51B4E842B00ACEE5F /* Build configuration list for PBXNativeTarget "RoyalTeapotTests" */;
+			buildPhases = (
+				4EC4F7B41B4E842B00ACEE5F /* Sources */,
+				4EC4F7B51B4E842B00ACEE5F /* Frameworks */,
+				4EC4F7B61B4E842B00ACEE5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC4F7BA1B4E842B00ACEE5F /* PBXTargetDependency */,
+			);
+			name = RoyalTeapotTests;
+			productName = RoyalTeapotTests;
+			productReference = 4EC4F7B81B4E842B00ACEE5F /* RoyalTeapotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EC4F7971B4E842A00ACEE5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = RoyalStar;
+				TargetAttributes = {
+					4EC4F79E1B4E842A00ACEE5F = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					4EC4F7B71B4E842B00ACEE5F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 4EC4F79E1B4E842A00ACEE5F;
+					};
+				};
+			};
+			buildConfigurationList = 4EC4F79A1B4E842A00ACEE5F /* Build configuration list for PBXProject "RoyalTeapot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 4EC4F7961B4E842A00ACEE5F;
+			productRefGroup = 4EC4F7A01B4E842A00ACEE5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EC4F79E1B4E842A00ACEE5F /* RoyalTeapot */,
+				4EC4F7B71B4E842B00ACEE5F /* RoyalTeapotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EC4F79D1B4E842A00ACEE5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE475471B8CC44900270AA3 /* Home.storyboard in Resources */,
+				4EE4754E1B8CC44900270AA3 /* RTHomeCollectionViewCell.xib in Resources */,
+				4EE4753E1B8CC44900270AA3 /* LaunchScreen.xib in Resources */,
+				4EC4F7B01B4E842A00ACEE5F /* Images.xcassets in Resources */,
+				4EE475481B8CC44900270AA3 /* FullAutomaticManualBtn.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC4F7B61B4E842B00ACEE5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91AD96014DD04979FC4CD761 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE5C46ABA16F465B2A65FBB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EC4F79B1B4E842A00ACEE5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE475441B8CC44900270AA3 /* RTMenuViewController.m in Sources */,
+				4EE4754C1B8CC44900270AA3 /* RTHomeCollectionView.m in Sources */,
+				4EE475431B8CC44900270AA3 /* RoyalTeapotConst.m in Sources */,
+				4EE475451B8CC44900270AA3 /* RTTeapotHomeViewController.m in Sources */,
+				4EE475411B8CC44900270AA3 /* AppDelegate.m in Sources */,
+				4EE475491B8CC44900270AA3 /* RTFullAutomatic.m in Sources */,
+				4EE4754B1B8CC44900270AA3 /* RTManuallyAddWaterView.m in Sources */,
+				4EE475421B8CC44900270AA3 /* main.m in Sources */,
+				4EE475401B8CC44900270AA3 /* DeviceStatusCodeModel.m in Sources */,
+				4EE475501B8CC44900270AA3 /* TestWebViewController.m in Sources */,
+				4EE475461B8CC44900270AA3 /* RTMQTTResultDataModel.m in Sources */,
+				4EE4754A1B8CC44900270AA3 /* RTManualHeatingView.m in Sources */,
+				4EE4754D1B8CC44900270AA3 /* RTHomeCollectionViewCell.m in Sources */,
+				4EE4754F1B8CC44900270AA3 /* RTTeapotHomeCenterBtnView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC4F7B41B4E842B00ACEE5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC4F7BF1B4E842B00ACEE5F /* RoyalTeapotTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EC4F7BA1B4E842B00ACEE5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC4F79E1B4E842A00ACEE5F /* RoyalTeapot */;
+			targetProxy = 4EC4F7B91B4E842B00ACEE5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4EC4F7C01B4E842B00ACEE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4EC4F7C11B4E842B00ACEE5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EC4F7C31B4E842B00ACEE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 437F142F84CE2C591887C5CB /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RoyalTeapot/Classes/Main/Lib/SMS_SDK",
+					"$(PROJECT_DIR)/RoyalTeapot/Classes/Main/Lib/Pgy_SDK",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RoyalTeapot/Classes/Main/Other/PCH.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RoyalTeapot/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/HF_SmartLink/SmartLink/FrameWork",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4EC4F7C41B4E842B00ACEE5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FA7AB62E313FE852DEAB854 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RoyalTeapot/Classes/Main/Lib/SMS_SDK",
+					"$(PROJECT_DIR)/RoyalTeapot/Classes/Main/Lib/Pgy_SDK",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RoyalTeapot/Classes/Main/Other/PCH.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RoyalTeapot/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/HF_SmartLink/SmartLink/FrameWork",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4EC4F7C61B4E842B00ACEE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RoyalTeapotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoyalTeapot.app/RoyalTeapot";
+			};
+			name = Debug;
+		};
+		4EC4F7C71B4E842B00ACEE5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RoyalTeapotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoyalTeapot.app/RoyalTeapot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EC4F79A1B4E842A00ACEE5F /* Build configuration list for PBXProject "RoyalTeapot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC4F7C01B4E842B00ACEE5F /* Debug */,
+				4EC4F7C11B4E842B00ACEE5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC4F7C21B4E842B00ACEE5F /* Build configuration list for PBXNativeTarget "RoyalTeapot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC4F7C31B4E842B00ACEE5F /* Debug */,
+				4EC4F7C41B4E842B00ACEE5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC4F7C51B4E842B00ACEE5F /* Build configuration list for PBXNativeTarget "RoyalTeapotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC4F7C61B4E842B00ACEE5F /* Debug */,
+				4EC4F7C71B4E842B00ACEE5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EC4F7971B4E842A00ACEE5F /* Project object */;
+}

@@ -1,0 +1,41 @@
+
+//
+//  PCH.pch
+//  RoyalTeapot
+//
+//  Created by 李晓 on 15/7/10.
+//  Copyright (c) 2015年 RoyalStar. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+typedef enum {
+    notDevice,// 无设备
+    offLine = 1,// 离线
+    powerOff,   // 关闭
+    deviceStart, // 启动
+    standby,    // 待机
+    autoMode,   // 全自动
+    manualModel, // 手动煮水
+    addWater,     // 手动加水
+    keepT       // 保温
+}deviceStatus;
+
+#ifndef RoyalTeapot_PCH_pch
+#define RoyalTeapot_PCH_pch
+
+// 全局使用的分类引用
+#ifdef __OBJC__
+
+#import "RoyalTeapotConst.h"
+#import "DeviceStatusCodeModel.h"
+#import <SkywareSDK.h>
+#import <ImportClass.h>
+
+#define kSystemLoginViewBackageColor kRGBColor(231, 231, 231, 1)
+#define kSystemRedBtnColor kRGBColor(188, 0, 24, 1)
+
+#endif
+
+#endif
